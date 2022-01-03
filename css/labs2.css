@@ -29,3 +29,7 @@ table{
 p{
     font-size: larger;
 }
+body{
+    display: block;
+    margin: 8px;
+}
