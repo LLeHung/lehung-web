@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+}
+ul{
+    text-align: ;
+    border-bottom: 1px solid #d53d01;
+}
+h3{
+    color: #c40071;
+    text-decoration: underline;
+    font-family: Arial;
+    font-weight: bold;
+}
+li{
+    list-style: none;
+    font-size: larger;
+}
+span{
+    text-align: right;
+    line-height:3.5px;
+    font-size: medium;
+}
+tbody{
+    white-space: normal;
+}
+table{
+    border-bottom: 1px solid #d53d01;
+}
+p{
+    font-size: larger;
+}
