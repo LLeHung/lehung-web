@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AsJs1</title>
+</head>
+<body>
+<script type="text/javascript" >
+    // nhập 1 số từ 0 - 99, sau đó tạo ngẫu nhiên 1 số từ 0 - 99. Kiểm tra xem số mình lựa chọn có phải là số ngẫu nhiên kia ko
+    // so ngau nhien tu 0-99
+    var r = Math.random();// 1 số ngẫu nhiên từ 0-> 1 (r>0 && r<1)
+    r = r*100; // (r>0 && r<100)
+    r = parseInt(r); // r>=0 && r<=99
+    //  console.log(r);
+
+    // nhập 5 số khác nhau
+    var arr = [];
+    while(arr.length<5){
+        var n;
+        do{
+            n = prompt("Nhap vao 1 so:");
+            n = parseInt(n);
+        }while (isNaN(n) || n<0 || n>99);
+        // arr[i] = n;
+        // kiem tra n ddax nằm trong mảng arr hay chưa?
+        if(!arr.includes(n)){
+            arr.push(n); // nạp 1 số n vào mảng
+        }
+    }
+    // if(n==r){
+    //     alert("Chúc mừng bạn đã trúng giải");
+    // }else{
+    //     alert("Chúc bạn may mắn vào ngày mai");
+    // }
+    var tg = false;
+    for(var i=0;i<arr.length;i++){
+        if(r == arr[i]){
+            alert("Chúc mừng bạn đã trúng giải");
+            tg= true;
+            break;
+        }
+    }
+    if(tg == false){
+        alert("Chúc bạn may mắn lần sau");
+    }
+</script>
+</body>
+</html>
